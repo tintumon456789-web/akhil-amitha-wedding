@@ -1,0 +1,264 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f8f5ef">
+
+  <title>Akhil & Amitha | Wedding Invitation</title>
+  <meta name="description" content="Celebrate the wedding of Akhil and Amitha on 30 November 2026.">
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Allura&family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@400;500;600&family=Playfair+Display:wght@400;500;600&display=swap"
+      rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@1,400&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+
+  
+</head>
+
+<body>
+
+  <!-- PAGE 1: DECORATIVE OPENING ENVELOPE -->
+  <section class="cover" id="cover">
+
+    <div class="cover-decoration decoration-top-left">❧</div>
+    <div class="cover-decoration decoration-top-right">❧</div>
+    <div class="cover-decoration decoration-bottom-left">❧</div>
+    <div class="cover-decoration decoration-bottom-right">❧</div>
+
+    <div class="cover-content">
+
+      <p class="cover-kicker">A MOMENT TO CHERISH</p>
+
+      <div class="cover-flower">✿ <span>♡</span> ✿</div>
+
+      <p class="cover-title">A special invitation</p>
+
+      <div class="envelope" id="envelope">
+        <div class="envelope-back"></div>
+
+        <div class="letter">
+          <span class="letter-top">YOU ARE INVITED</span>
+          <h2>Akhil <span>&</span> Amitha</h2>
+          <div class="letter-divider">♡</div>
+          <p>WE ARE GETTING MARRIED</p>
+          <span class="letter-date">30 · 11 · 2026</span>
+        </div>
+
+        <div class="envelope-front"></div>
+        <div class="envelope-flap"></div>
+
+        <div class="wax-seal">
+          <span>♥</span>
+        </div>
+      </div>
+
+      <button class="open-button" id="openButton">
+        OPEN INVITATION <span>↗</span>
+      </button>
+
+      <p class="cover-note">A beautiful beginning, made with love</p>
+
+      <div class="cover-bottom-flower">♡</div>
+    </div>
+  </section>
+
+
+  <!-- PAGE 2: WEDDING INVITATION -->
+  <main id="invitation" class="invitation hidden">
+
+    <!-- Bible verse appears only on this page -->
+    <section class="verse-top">
+      <div class="verse-ornament">♱</div>
+
+      <p class="bible-verse">
+        “God has made everything beautiful
+        in its time.”
+      </p>
+
+      <span class="verse-reference">ECCLESIASTES 3:11</span>
+
+      <div class="verse-divider">
+        <span>❧</span>
+      </div>
+    </section>
+
+
+    <!-- COUPLE DETAILS -->
+    <section class="couple-section">
+
+      <div class="corner-flower corner-one">❧</div>
+      <div class="corner-flower corner-two">❧</div>
+
+      <p class="eyebrow">TOGETHER WITH OUR FAMILIES</p>
+      <p class="invitation-line">Joyfully invite you to celebrate</p>
+
+      <h1 class="couple-names">
+        <span>Akhil</span>
+        <span class="name-ampersand">&</span>
+        <span>Amitha</span>
+      </h1>
+
+      
+      <!-- Replace this with the actual couple photo -->
+      <div class="photo-frame">
+        <img
+          src="images/couple.jpg"
+          alt="Akhil and Amitha wedding photo"
+          class="couple-photo"
+          onerror="this.hidden=true; this.nextElementSibling.hidden=false"
+        >
+
+        <div class="photo-placeholder" hidden>
+          <span>♡</span>
+          <p>Akhil & Amitha</p>
+          <small>Add the couple photo to images/couple.jpg</small>
+        </div>
+        <p>𝒜💍𝒜</p>
+        
+      </div>
+      <!-- <p class="getting-married">We are getting married</p> -->
+
+      <p class="love-note">
+        Two hearts, one promise, one beautiful journey
+        together in God's grace.
+      </p>
+
+      <div class="couple-floral-divider">✿ <span>♡</span> ✿</div>
+
+      
+    </section>
+
+
+    <!-- WEDDING DATE -->
+    <section class="date-section">
+
+      <p class="eyebrow">PLEASE SAVE THE DATE</p>
+      <h2 class="date-heading">Our Wedding Day</h2>
+
+      <div class="date-display">
+        <div>
+          <strong>30</strong>
+          <span>DAY</span>
+        </div>
+
+        <i></i>
+
+        <div>
+          <strong>11</strong>
+          <span>MONTH</span>
+        </div>
+
+        <i></i>
+
+        <div>
+          <strong>26</strong>
+          <span>YEAR</span>
+        </div>
+      </div>
+
+      <i></i>
+
+      <p class="date-caption">MONDAY · NOVEMBER 2026</p>
+
+      <div class="time-pill">
+        <span>◷</span> 3:00 PM
+      </div>
+
+      <div class="countdown" id="countdown">
+        <div><strong id="days">--</strong><span>Days</span></div>
+        <div><strong id="hours">--</strong><span>Hours</span></div>
+        <div><strong id="minutes">--</strong><span>Minutes</span></div>
+        <div><strong id="seconds">--</strong><span>Seconds</span></div>
+      </div>
+
+    </section>
+
+
+    <!-- ONE COMBINED CHURCH + RECEPTION LOCATION -->
+    <section class="venue-section">
+
+      <p class="eyebrow">JOIN US IN CELEBRATION</p>
+      <h2 class="venue-main-heading">The Wedding Celebration</h2>
+
+      <div class="venue-card">
+
+        <div class="venue-floral">❧</div>
+
+        <p class="venue-label">WEDDING CEREMONY</p>
+        <h3>St. Mary's Church</h3>
+        <p class="venue-address">S.M. Nagar</p>
+        <p class="venue-time">30 November 2026 · 3:00 PM</p>
+
+        <div class="venue-divider">
+          <span>♡</span>
+        </div>
+
+        <p class="venue-label">RECEPTION</p>
+        <h3>Mariyan Parish Hall</h3>
+        <p class="venue-address">S.M. Nagar</p>
+        <p class="venue-time">Reception to follow</p>
+
+        <div class="same-location">
+          <span>⌖</span>
+          Both celebrations at the same location
+        </div>
+
+        <a
+          class="map-button"
+          href="https://maps.app.goo.gl/VCJqSpFBRSg1KZBRA"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <span>📍</span> GET DIRECTIONS
+        </a>
+
+      </div>
+    </section>
+
+
+
+<!-- CLOSING MESSAGE -->
+<section class="closing-section">
+
+  <div class="closing-ornament">❦</div>
+
+  <p class="eyebrow">WITH LOVE & JOY</p>
+
+  <h2 class="closing-heading">
+    We look forward to celebrating with you
+  </h2>
+
+  <p class="closing-text">
+    Your presence and prayers mean so much to us.
+  </p>
+
+  <div class="closing-divider">
+    <span>♡</span>
+  </div>
+
+
+
+
+      <p class="closing-names">Akhil <span>&</span> Amitha</p>
+      <p class="closing-date">30 · NOVEMBER · 2026</p>
+
+      <div class="closing-flowers">✿ &nbsp; ❧ &nbsp; ✿</div>
+    </section>
+
+
+    <footer>
+      MADE WITH LOVE <span>♥</span> BLESSED BY GOD
+    </footer>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
