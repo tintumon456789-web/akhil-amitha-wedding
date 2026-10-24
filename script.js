@@ -1,8 +1,10 @@
-
 const cover = document.getElementById("cover");
 const envelope = document.getElementById("envelope");
 const openButton = document.getElementById("openButton");
 const invitation = document.getElementById("invitation");
+
+// Wedding music
+const music = document.getElementById("weddingMusic");
 
 let isOpening = false;
 
@@ -10,10 +12,22 @@ openButton.addEventListener("click", () => {
   if (isOpening) return;
 
   isOpening = true;
+
+  // Open the envelope animation
   envelope.classList.add("open");
   openButton.textContent = "OPENING YOUR INVITATION...";
   openButton.disabled = true;
 
+  // Start wedding music when the button is clicked
+  if (music) {
+    music.volume = 0.4; // 40% volume
+
+    music.play().catch((error) => {
+      console.log("Music could not start:", error);
+    });
+  }
+
+  // Show the wedding invitation
   setTimeout(() => {
     cover.classList.add("hidden");
     invitation.classList.remove("hidden");
